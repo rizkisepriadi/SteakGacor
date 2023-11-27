@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*root*/
+:root{
+  --bg-color: #151F28;
+  --text-color: #ffffff;
+  --main-color: #fca311;
+
+  --big-font: 2.5rem;
+  --p-font: 1.1rem;
+}
+
+
+
+/*konten header*/
+header{
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 8% 12px 2%;
+  font-size: 15px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+header a{
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+header span{
+  color: var(--main-color);
+}
+header .logo{
+  font-size: 20px;
+}
+header img{
+  width: auto;
+  height: 30px;
+}
+.navbar ul{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar a {
+  color: var(--text-color);
+  letter-spacing: 4px;
+}
+.navbar span{
+  color: var(--main-color);
+}
+
+
+
+/*konten body*/
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.banner { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 0 2% 0 2%;
+  gap: 100px;
+}
+.banner-img img {
+  width: 500px;
+  align-items: center;
+}
+
+.promo {
+  padding: 0 8%;
+}
+.promo-img-food {
+  height: 200px;
+  width: 20%;
+  border:1px solid #f0a591;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}
+.promo-img-food:hover{
+  background-color: rgba(252, 163, 17, 0.3);
+}
+.promo-img-drink {
+  height: 200px;
+  width: 20%;
+  border:1px solid #f0a591;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}
+.promo-img-drink:hover{
+  background-color: rgba(252, 163, 17, 0.3);
+}
+
+.menu-container{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.menu-link {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+.menu-link:after {
+  content: "_";
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-align: center;
+  height: 0;
+  width: 100%;
+  transition: height 0.3s;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 20px;
+}
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.tabs__radio {
+  display: none;
+}
+.tabs__content {
+  order: 1;
+  width: 100%;
+  display: none;
+  justify-content: center;
+}
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: flex;
+  gap: 20px;
+}
+.link h2{
+  text-decoration: none;
+  color: var(--text-color);
+  width: fit-content;
+}
+.link h2:hover{
+  color: var(--main-color);
+}
+
+
+
+/*food*/
+.food-content-img{
+  width: 400px;
+  border: 1px solid var(--main-color);
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}
+.food-content-img img{
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}
+.food-content-img h2, p{
+  padding: 4px;
+}
+/*drink*/
+.drink-content-img{
+  width: 400px;
+  border: 1px solid var(--main-color);
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}
+.drink-content-img img{
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}
+.drink-content-img h2, p{
+  padding: 4px;
+}
+.content-img:hover{
+  background-color: rgba(252, 163, 17, 0.3);
+}
+.drink-content-img .content-img:hover{
+  opacity: 80%;
+}
+
+
+/*Footer*/
+footer{
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  background: var(--main-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 6%;
+  padding-bottom: 5px;
+}
+.navbar-footer a{
+  color: var(--text-color);
+  font-size: var(--p-font);
+  margin: 0 25px;
+  transition: all ease-in-out .50s;
+}
+footer p{
+  font-size: 15px;
+}
+.back {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.back a{
+  color: var(--text-color);
+}
+.back i{
+  font-size: 40px;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

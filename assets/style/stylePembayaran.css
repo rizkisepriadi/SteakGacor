@@ -1,0 +1,265 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*root*/
+:root{
+  --bg-color: #151F28;
+  --text-color: #ffffff;
+  --main-color: #fca311;
+
+  --big-font: 2.5rem;
+  --p-font: 1.1rem;
+}
+
+
+
+/*konten header*/
+header{
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 8% 12px 2%;
+  font-size: 15px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+header a{
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+header span{
+  color: var(--main-color);
+}
+header .logo{
+  font-size: 20px;
+}
+header img{
+  width: auto;
+  height: 30px;
+}
+.navbar ul{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar a {
+  color: var(--text-color);
+  letter-spacing: 4px;
+}
+.navbar span{
+  color: var(--main-color);
+}
+
+
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.buttonback{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 2% 0 2%;
+}
+.button a{
+  color: var(--main-color);
+}
+.button a:hover{
+  color: var(--text-color);
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2% 0 2%;
+}
+.wrap h1{
+  font-size: 50px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 2% 0 2%;
+}
+.isi{
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  height: 390px;
+  overflow: hidden;
+}
+.form{
+  padding: 0 2% 0 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.image img{
+  width: 600px;
+  height: 50vh;
+  align-items: center;
+}
+.konten h2, p{
+  padding: 20px 20px 4px 20px;
+  text-align: justify;
+}
+.float-kanan .select{
+  flex-direction: row;
+}
+.select {
+  appearance: none;
+  border: 0;
+  box-shadow: none;
+  width: 200px;
+  height: 30px;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #2c3e50;
+  background-image: none;
+  cursor: pointer;
+}
+.form h2{
+  padding-left: 0;
+}
+textarea{
+  outline: none;
+  border: 0;
+  resize: none;
+  width: 200px;
+  font-size: 15px;
+  height: 30px;
+  background-color: #2c3e50;
+  padding: 0 1em;
+  color: #fff;
+}
+.buka{
+  padding-top: 10px;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: var(--main-color);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+.popup h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  text-align: center;
+}
+
+
+
+.order-btn{
+  display: inline-block;
+  background-color: var(--main-color);
+  margin: 2% 0 2% 2%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  transition: all ease-in-out 1.4s;
+}
+.order-btn i{
+  font-weight: 800;
+  font-size: 20px;
+}
+.order-btn:hover{
+  transform: translateY(-10px);
+  opacity: 80%;
+}
+
+
+
+
+
+/*Footer*/
+footer{
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  background: var(--main-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 6%;
+  padding-bottom: 5px;
+}
+.navbar-footer a{
+  color: var(--text-color);
+  font-size: var(--p-font);
+  margin: 0 25px;
+  transition: all ease-in-out .50s;
+}
+footer p{
+  font-size: 15px;
+}
+.back {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.back a{
+  color: var(--text-color);
+}
+.back i{
+  font-size: 40px;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
